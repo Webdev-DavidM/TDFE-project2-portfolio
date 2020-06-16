@@ -1,0 +1,254 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.about-me {
+  margin: 0 1.5em;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  color: #45556b;
+  line-height: 1.6;
+}
+
+.me {
+  padding-left: 1.5em;
+  color: red;
+}
+
+p {
+  color: #7f8fa6;
+  max-width: 280px;
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+.experience {
+  margin-bottom: 3em;
+  background-color: white;
+}
+
+.no-margin p {
+  margin-bottom: 0px;
+}
+
+.portfolio {
+  font-family: 'Anton', sans-serif;
+  font-size: 4em;
+  letter-spacing: 0.2em;
+}
+
+a {
+  text-decoration: none;
+  color: #45556b;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.top-nav li {
+  background-color: white;
+  margin: 10px auto;
+  font-weight: bold;
+  width: 90%;
+}
+
+.contact {
+  padding-top: 1em;
+}
+
+h1,
+h3,
+.top-nav {
+  text-align: center;
+}
+
+nav {
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  padding-top: 25px;
+}
+
+hr {
+  margin: auto;
+  width: 80%;
+  margin-top: 0;
+}
+
+.portfolio-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h4 {
+  margin: 1em;
+}
+
+.profile {
+  background-color: #f9f9f9;
+  padding: 0% 5%;
+}
+
+.top,
+.contact,
+.mobile,
+.tablet {
+  background-color: #f9f9f9;
+}
+
+.darker,
+h3,
+h4 {
+  color: #45556b;
+}
+
+.bottom-nav {
+  float: right;
+  margin-top: 25px;
+}
+
+.bottom-nav li a {
+  display: inline-block;
+}
+
+img {
+  width: 280px;
+  height: auto;
+}
+
+.back-to-top {
+  float: right;
+}
+.david {
+  float: left;
+  margin: 1em 1em;
+  background-color: #f9f9f9;
+}
+
+h5 {
+  margin-right: 1em;
+}
+
+.tablet {
+  display: none;
+  padding-top: 0px;
+  height: 80px;
+}
+
+.mobile {
+  padding-top: 0;
+  height: 80px;
+}
+
+.prof {
+  width: 220px;
+  height: auto;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  li {
+    display: inline-block;
+    width: auto;
+  }
+
+  a {
+    margin-right: 10px;
+  }
+
+  .about-me {
+    width: 80%;
+  }
+
+  .bottom-nav li {
+    display: inline-block;
+  }
+
+  .mobile {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 1em;
+  }
+
+  .tablet {
+    display: block;
+
+    background-color: #f9f9f9;
+  }
+  .col {
+    width: 50%;
+    float: left;
+  }
+
+  .prof {
+    float: right;
+  }
+
+  .image-container {
+    width: 40%;
+    float: right;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .david {
+    margin-left: 1em;
+  }
+
+  .prof {
+    width: 320px;
+
+    height: auto;
+  }
+
+  .top-nav li {
+    background-color: transparent;
+    width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .col {
+    width: 33.3%;
+  }
+  .me {
+    float: left;
+  }
+  .top-nav {
+    float: right;
+  }
+
+  .prof {
+    width: 320px;
+    height: auto;
+  }
+
+  li:last-child {
+    margin-right: 2.5em;
+  }
+
+  .profile {
+    background-color: #f9f9f9;
+    padding: 0% 3%;
+  }
+}
+
+/* float clearfix */
+
+.group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
